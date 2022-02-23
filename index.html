@@ -8,40 +8,49 @@
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
     <body>
-        <h1>Welcome To The Bee Hive</h1>
-        <p>A site all about the fabulous me!!</p>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#" class="right">Link</a>
+        </div>
+
+        <!-- Header -->
+        <div class ="header">
+        <h2>WELCOME TO THE BEE HIVE</h2>
+        <p>A site all about the fabulous me!</p>
+        </div>
+
+        <div class="row">
+            <div class="side">
+                <h3>A BIT ABOUT ME</h3>
+                <p>
+                    <li>Born in 1998</li>
+                    <li>Love playing video games</li>
+                    <li>Write & play music</li>
+                    <li>Studied various martial arts</li>
+                    <li>Learning to write code</li>
+                </p>
+            </div>
+            <div class="main">
+
+            </div>
+        </div>
 
         <script src="js/main.js"></script>
     
-        <!-- Image Carousel -->
-        <div class = "slideshow-container">
-
-            <!-- Full-width images w/ number & caption text-->
-            <div class = "mySlides fade">
-                <div class = "numbertext">1 / 3</div>
-                <img src = "Pics/img_slide_1.jpg" style = "width:100%">
-                <div class = "text">Caption Text</div>
-            </div>
-
-            <div class = "mySlides fade">
-                <div class = "numbertext">2 / 3</div>
-                <img src = "Pics/img_slide_2.jpg" style = "width:100%">
-                <div class = "text">Caption Two</div>
-            </div>
-
-            <div class = "mySlides fade">
-                <div class = "numbertext">3 / 3</div>
-                <img src = "Pics/img_slide_3.jpg" style = "width:100%">
-                <div class = "text">Caption Three</div>
-            </div>
-
-            <!-- Next / Previous Buttons -->
-            <a class = "prev" onclick ="plusSlides(-1)">&#10094</a>
-            <a class = "next" onclick ="plusSlides(1)">&#10095</a>
+        <!-- Slide Show -->
+        <div>
+            <img class="mySlides" src="Pics/img_slide_1.jpg" style="width:100%">
+            <img class="mySlides" src="Pics/img_slide_2.jpg" style="width:100%">
+            <img class="mySlides" src="Pics/img_slide_3.jpg" style="width:100%">
         </div>
-        <br>
 
         <!-- Dots/Circles -->
         <div style = "text-align: center;">
@@ -49,7 +58,13 @@
             <span class = "dot" onclick = "currentSlide(2)"></span>
             <span class = "dot" onclick = "currentSlide(3)"></span>
         </div>
-    
+
+        <!-- Footer -->
+        <footer class="">
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </footer>
     
     </body>
 </html>

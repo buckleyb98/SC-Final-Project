@@ -2,31 +2,18 @@ window.addEventListener("load", () => {
     console.log("Up and running.")
   })
 
-  var slideIndex = 1;
-  showSlides(slideIndex);
+ // Automatic Slideshow - changes image every 3 seconds
+var myIndex = 0;
+carousel();
 
-  //Next/Previous Controls
-  function plusSlides(n) {
-      showSlides(slideIndex += n);
-  }
-
-  //Thumbnail Image Controls
-  function currentSlide(n) {
-      showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = 1}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].getElementsByClassName.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-  }
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
